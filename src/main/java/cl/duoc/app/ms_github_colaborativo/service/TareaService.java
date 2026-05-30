@@ -48,4 +48,11 @@ public class TareaService {
     public boolean eliminar(Long id) {
         return tareas.removeIf(t -> t.getId().equals(id));
     }
+
+
+    public List listarPorResponsable (String responsable) {
+        return tareas.stream()
+                .filter (t -> t.getResponsable () .equalsIgnoreCase(responsable))
+                .toList () ;
+    }
 }
