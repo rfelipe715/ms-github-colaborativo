@@ -7,6 +7,7 @@ public class Tarea {
     private String descripcion;
     private String responsable;
     private boolean completada;
+    private String prioridad;
 
     public Tarea() {
     }
